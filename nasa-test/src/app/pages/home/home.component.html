@@ -1,0 +1,19 @@
+<div class="card">
+    <h1>Mostrar Fotos</h1>
+
+    <div class="aligment-items">
+        <button *ngFor="let rover of roversName" (click)="getRover(rover.name)" class="btn">
+            {{ rover.name }}
+        </button>
+    </div>
+</div>
+
+<div class="card" *ngIf="showPhotos">
+    <h1>Fotos de {{ selectedRover }}</h1>
+
+    <img [src]="photo.img_src" *ngFor="let photo of listOfPhotos" class="img">
+</div>
+
+<div class="card" *ngIf="!showPhotos && !firstTime">
+    <h1>Cargando...</h1>
+</div>

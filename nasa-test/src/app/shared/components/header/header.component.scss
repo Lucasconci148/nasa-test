@@ -1,0 +1,19 @@
+.header {
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 20px;
+    background-color: white;
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+    margin-top: -13px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
