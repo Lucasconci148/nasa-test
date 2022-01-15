@@ -11,7 +11,8 @@ const routes: Routes = [
     path: '**',
     component: HomeComponent
   }
- ];
+  // add submodule -
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
