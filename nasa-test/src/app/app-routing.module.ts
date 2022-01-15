@@ -7,11 +7,12 @@ const routes: Routes = [
     path: '', 
     component: HomeComponent 
   },
-  {
-    path: '**',
-    component: HomeComponent
-  }
   // add submodule -
+  {
+    path: 'rovers',
+    loadChildren: () =>
+      import('./modules/rovers-module/rovers.module').then(m => m.RoverModule)
+  },
 ];
 
 @NgModule({

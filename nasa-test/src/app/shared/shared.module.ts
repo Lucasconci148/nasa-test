@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
   ],
   imports: [
-    BrowserModule,
     HttpClientModule
   ],
   exports:[
