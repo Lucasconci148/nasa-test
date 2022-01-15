@@ -1,0 +1,3 @@
+[submodule "nasa-test/src/app/modules/rovers-module"]
+	path = nasa-test/src/app/modules/rovers-module
+	url = https://github.com/Lucasconci148/rovers-module
